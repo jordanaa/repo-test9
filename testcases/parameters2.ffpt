@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ParameterTree version="9.0.0.202202250149">
+    <parameters escape="true">
+        <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+            <reservationId/>
+            <addedResourcesIds/>
+            <deletedResourcesIds pt:mask="true">CaK+mWSFs84=</deletedResourcesIds>
+            <addedLinksIds/>
+            <deletedLinksIds/>
+        </parameters>
+    </parameters>
+</ParameterTree>
