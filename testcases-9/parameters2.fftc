@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<testCase version="9.0.0.202202250149">
+    <general>
+        <language>Python</language>
+    </general>
+    <execution>
+        <parameters version="9.0.0.202202250149">
+            <parameters escape="true">
+                <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                    <parameter1>20</parameter1>
+                    <parameter2>&quot;Random text here&quot;</parameter2>
+                    <maskedParameter1>Nd3O6CGyJVDhWBQgWAG2EA==</maskedParameter1>
+                </parameters>
+            </parameters>
+        </parameters>
+    </execution>
+    <requirements>
+        <requirement key="random">value</requirement>
+    </requirements>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="9ce1d280-773b-4e4b-af77-0d5b559b2f20" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>var1= param(&apos;reservationId&apos;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="bb08efe5-4587-467b-804c-4fdf63412993" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>var2 = param(&apos;addedResourcesIds&apos;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="efb2eccd-8ecc-43d6-a5d7-0077352d350a" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>var3 = param(&apos;deletedResourcesIds&apos;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="51e2cac6-cd3d-4e8a-b159-faf9f7dd30ef" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>var4 = param(&apos;addedLinksIds&apos;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="dc94609d-d999-44bd-a4bb-b98122c3aa13" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>var5 = param(&apos;deletedLinksIds&apos;)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="81a27aa9-3a5f-4f5f-9b78-f575a89ba0f5" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(var1)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="1bd83355-f0ed-4a60-bbce-de35378f017d" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(var2)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="9dd6ec05-b903-42a1-baaf-5294e79cac7a" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(var3)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="5318434b-fa82-42bd-9071-711b1e0bce49" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(var4)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="359c5741-5309-4fe9-8a5f-d381200c7432" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(var5)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<testCase version="7.0.1.201802131446">
+    <execution>
+        <parameters version="7.0.1.201802131446">
+            <parameters escape="true">
+                <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                    <parameter1>20</parameter1>
+                    <parameter2>&quot;Random text here&quot;</parameter2>
+                    <maskedParameter1>Nd3O6CGyJVDhWBQgWAG2EA==</maskedParameter1>
+                </parameters>
+            </parameters>
+        </parameters>
+    </execution>
+    <requirements>
+        <requirement key="random">value</requirement>
+    </requirements>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="1c37bf91-dd17-444c-ba5d-3b25cff9433e" action="eval">
+                    <command>
+                        <body>set masked [param maskedParameter1]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="55346a3f-212a-4ed7-985b-6b3caab1233b" action="eval">
+                    <command>
+                        <body>set firstParam [param parameter1]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="1e96b132-a43e-4c8f-8515-d614b5c0cf6a" action="eval">
+                    <command>
+                        <body>set secondParam [param parameter2]</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="0b09c94b-097c-44df-b80c-a37a8d17e27e" action="eval">
+                    <command>
+                        <body>puts &quot;The value $firstParam is correct&quot;</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="363ca5ab-2f0d-45ba-86aa-3a89a238ed4c" action="eval">
+                    <command>
+                        <body>puts &quot;The second parameter is $secondParam&quot;</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+                <item guid="deb7b847-d89a-42a5-b1db-84d42e8dbb55" action="eval">
+                    <command>
+                        <body>puts &quot;Masked parameter is: $masked&quot;</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    <useFieldsInCommand>false</useFieldsInCommand>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>
